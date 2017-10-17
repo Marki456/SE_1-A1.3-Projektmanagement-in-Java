@@ -3,12 +3,13 @@ import org.junit.Test;
 import org.junit.Before;
 
 public class ProjectTester {
+	ProjOrder smallStr,longStr,equal;
 	
 	@Before
 	public void preserved(){
-	ProjOrder smallStr = new ProjOrder(new String[][]{{"A","B"},{"B","D"},{"D","C"}});
-	ProjOrder longStr = new ProjOrder(new String[][]{{"F","A"},{"E","B"},{"D","C"},{"G","H"}});
-	ProjOrder equal = new ProjOrder(new String [][]{{"B","B"}});	
+		smallStr = new ProjOrder(new String[][]{{"A","B"},{"B","D"},{"D","C"}});
+		longStr = new ProjOrder(new String[][]{{"F","A"},{"E","B"},{"D","C"},{"G","H"}});
+		equal = new ProjOrder(new String [][]{{"B","B"}});	
 	}
 	
 	@Test
